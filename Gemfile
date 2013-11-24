@@ -13,4 +13,4 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 gem "haml"
 
 gem "rack-contrib"
-gem "puma
+gem "puma"
