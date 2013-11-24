@@ -1,0 +1,52 @@
+.header{
+  font-size: 0px;
+}
+
+.header_info{
+  text-align: right;
+  border-bottom: solid 1px #0788c9;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.logo{
+  display: inline-block;
+  width: 50%;
+}
+.main_logo{
+  background: image-url("header/logo.png") no-repeat;
+  width: 164px;
+  height: 66px;
+}
+
+.social_header{
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  text-align: right;
+
+  .social_logo{
+    width: 30px;
+    height: 29px;
+    display: inline-block;
+    margin-left: 11px;
+    &.logo_twitter{
+      background: image-url("header/twitter.png") no-repeat;
+      &:hover{
+        background: image-url("header/twitter-over.png") no-repeat;
+      }
+    }
+    &.logo_facebook{
+      background: image-url("header/facebook.png") no-repeat;
+      &:hover{
+        background: image-url("header/facebook-over.png") no-repeat;
+      }
+    }
+    &.logo_devian{
+      background: image-url("header/DA.png") no-repeat;
+      &:hover{
+        background: image-url("header/DA-over.png") no-repeat;
+      }
+    }
+  }
+}
