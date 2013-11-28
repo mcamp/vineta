@@ -1,0 +1,50 @@
+.historias{
+  background: image-url("menuhome/boton-historias.png") no-repeat;
+  width: 200px;
+  height: 416px;
+
+  &:hover{
+    background: image-url("menuhome/boton-historias-over.png") no-repeat;
+  }
+}
+
+.autores{
+  background: image-url("menuhome/boton-autores.png") no-repeat;
+  width: 405px;
+  height: 176px;
+
+  &:hover{
+    background: image-url("menuhome/boton-autores-over.png") no-repeat;
+  }
+}
+
+.arte{
+  background: image-url("menuhome/arte.png") no-repeat;
+  width: 200px;
+  height: 235px;
+
+  &:hover{
+    background: image-url("menuhome/arte-over.png") no-repeat;
+  }
+}
+
+
+.quienes-somos{
+  background: image-url("menuhome/quienes-somos.png") no-repeat;
+  width: 200px;
+  height: 115px;
+
+  &:hover{
+    background: image-url("menuhome/quienes-somos-over.png") no-repeat;
+  }
+}
+
+.contacto{
+  background: image-url("menuhome/contacto.png") no-repeat;
+  width: 200px;
+  height: 115px;
+
+  &:hover{
+    background: image-url("menuhome/contacto-over.png") no-repeat;
+  }
+}

@@ -63,4 +63,53 @@ a:visited{
   margin-top: 0px;
 }
 
+.inline-block{
+  display: inline-block;
+}
+
+.left-element{
+  @extend .separation-5;
+  @extend .separation-only-right;
+  @extend .inline-block;
+}
+
+.right-container{
+  @extend .separation-5;
+  @extend .separation-only-left;
+  @extend .inline-block;
+
+  .right-top-element{
+    @extend .separation-5;
+    @extend .separation-only-bottom;
+    @extend .inline-block;
+  }
+
+  .right-bottom-container{
+    @extend .separation-5;
+    @extend .separation-only-top;
+
+    .left-bottom-element{
+      @extend .separation-5;
+      @extend .separation-only-right;
+      @extend .inline-block;
+
+    }
+    .right-inner-container{
+      @extend .separation-5;
+      @extend .separation-only-left;
+      @extend .inline-block;
+
+      .right-bottom-top-element{
+        @extend .separation-5;
+        @extend .separation-only-bottom;
+        @extend .inline-block;
+      }
+      .right-bottom-bottom-element{
+        @extend .separation-5;
+        @extend .separation-only-top;
+      }
+    }
+  }
+}
+
 
