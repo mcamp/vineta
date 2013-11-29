@@ -112,4 +112,14 @@ a:visited{
   }
 }
 
+.half_left{
+  @extend .separation-5;
+  @extend .separation-only-right;
+  @extend .inline-block;
+}
+.half_right{
+  @extend .separation-5;
+  @extend .separation-only-left;
+  @extend .inline-block;
+}
 

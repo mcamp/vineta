@@ -42,3 +42,21 @@
 .example_images{
   display: inline-block;
 }
+
+.profile_pic_big{
+  width: 302px;
+  height: 416px;
+  &.kevin_big{
+    background: image-url("authors/kevin.jpg") no-repeat;
+    &:hover{
+      background: image-url("authors/kevin-over.jpg") no-repeat;
+    }
+  }
+
+  &.jony_big{
+    background: image-url("authors/jony.jpg") no-repeat;
+    &:hover{
+      background: image-url("authors/jony-over.jpg") no-repeat;
+    }
+  }
+}
