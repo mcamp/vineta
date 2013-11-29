@@ -1,0 +1,17 @@
+.nav_buttons{
+  margin-top: 24px;
+  text-align: right;
+
+  .nav_button{
+    width: 34px;
+    height: 22px;
+    display: inline-block;
+    margin-left: 38px;
+    &.home_button{
+      background: image-url("buttons/boton-home.png") no-repeat;
+    }
+    &.back_button{
+      background: image-url("buttons/boton-atras.png") no-repeat;
+    }
+  }
+}
