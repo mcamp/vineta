@@ -12,9 +12,8 @@
     = javascript_include_tag  "all"
 
   %body{"class" => page_classes}
-    .header
-      .wrapper-body
-        = partial "layouts/header"
+
+    = partial "layouts/header"
     .main_content
       .wrapper-body
         = yield

@@ -1,14 +1,18 @@
-.header_icon
-  .logo
-    %a{href: "/"}
-      .main_logo
+.header
+  .wrapper-body
+    .header_icon
+      .logo
+        %a{href: "/"}
+          .main_logo
 
-  .social_header
-    %a{href: "http://www.facebook.com"}
-      .social_logo.logo_facebook
-    %a{href: "http://www.twitter.com"}
-      .social_logo.logo_twitter
-    %a{href: "http://www.devianart.org"}
-      .social_logo.logo_devian
-.header_info
-  = "Autores - Kevin Merino"
+      .social_header
+        %a{href: "http://www.facebook.com"}
+          .social_logo.logo_facebook
+        %a{href: "http://www.twitter.com"}
+          .social_logo.logo_twitter
+        %a{href: "http://www.devianart.org"}
+          .social_logo.logo_devian
+.wrapper-body
+  .header_info
+    -if content_for? :header_title
+      = yield_content :header_title
