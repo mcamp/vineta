@@ -12,7 +12,10 @@
     = javascript_include_tag  "all"
 
   %body{"class" => page_classes}
-    = partial "layouts/header"
+    .header
+      .wrapper-body
+        = partial "layouts/header"
     .main_content
-      = yield
+      .wrapper-body
+        = yield
 
