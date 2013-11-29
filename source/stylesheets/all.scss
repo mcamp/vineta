@@ -113,13 +113,11 @@ a:visited{
 }
 
 .half_left{
-  @extend .separation-5;
-  @extend .separation-only-right;
+  margin-right: 3px;
   @extend .inline-block;
 }
 .half_right{
-  @extend .separation-5;
-  @extend .separation-only-left;
+  margin-left: 3px;
   @extend .inline-block;
 }
 
