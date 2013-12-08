@@ -129,3 +129,29 @@ a:visited{
   @extend .inline-block;
 }
 
+.third_size{
+  width: 200px;
+  height: 416px;
+}
+
+.third_left{
+  @extend .separation-5;
+  @extend .separation-only-right;
+  @extend .third_size;
+  @extend .inline-block;
+}
+
+.third_middle{
+  @extend .separation-5;
+  @extend .separation-only-sides;
+  @extend .third_size;
+  @extend .inline-block;
+}
+
+.third_right{
+  @extend .separation-5;
+  @extend .separation-only-left;
+  @extend .third_size;
+  @extend .inline-block;
+}
+

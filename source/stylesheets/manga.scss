@@ -1,0 +1,33 @@
+.naranja_manga{
+  background: image-url("menuhistorias/boton-operacion-naranja.jpg") no-repeat;
+  &:hover{
+    background: image-url("menuhistorias/boton-operacion-naranja-over.jpg") no-repeat;
+  }
+}
+.pin_manga{
+  background: image-url("menuhistorias/boton-pink-y-floid.jpg") no-repeat;
+  &:hover{
+    background: image-url("menuhistorias/boton-pink-y-floid-over.jpg") no-repeat;
+  }
+}
+
+.no_manga{
+  background: image-url("menuhistorias/pronto.jpg") no-repeat;
+  &:hover{
+    background: image-url("menuhistorias/pronto-over.jpg") no-repeat;
+  }
+}
+
+.naranja_1{
+  background: image-url("menuhistorias/menucapitulos/capitulo1.jpg") no-repeat;
+  &:hover{
+    background: image-url("menuhistorias/menucapitulos/capitulo1-over.jpg") no-repeat;
+  }
+}
+
+.naranja_2{
+  background: image-url("menuhistorias/menucapitulos/capitulo2.jpg") no-repeat;
+  &:hover{
+    background: image-url("menuhistorias/menucapitulos/capitulo2-over.jpg") no-repeat;
+  }
+}
