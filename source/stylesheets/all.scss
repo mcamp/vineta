@@ -155,3 +155,42 @@ a:visited{
   @extend .inline-block;
 }
 
+.data_form{
+  @extend .separation-5;
+  @extend .separation-only-right;
+  @extend .inline-block;
+  background-color: #0086CC;
+
+  width: 400px;
+  height:416px;
+}
+.contact_right{
+  @extend .separation-5;
+  @extend .separation-only-left;
+  @extend .inline-block;
+}
+
+.mails{
+  @extend .separation-5;
+  @extend .separation-only-bottom;
+  @extend .inline-block;
+  width: 205px;
+  height: 364px;
+
+  background: image-url("contacto/cartas.jpg") no-repeat;
+}
+
+.send_form{
+  @extend .separation-5;
+  @extend .separation-only-top;
+
+  width: 205px;
+  height: 47px;
+
+
+  background: image-url("contacto/boton-enviar.jpg") no-repeat;
+  &:hover{
+    background: image-url("contacto/boton-enviar-over.jpg") no-repeat;
+  }
+}
+

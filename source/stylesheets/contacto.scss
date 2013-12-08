@@ -1,0 +1,13 @@
+.data_form{
+  padding: 15px;
+  font-size: 14px;
+
+  p{
+    margin-bottom: 3px;
+
+    &.small{
+      font-size: 10px;
+    }
+  }
+
+}

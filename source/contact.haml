@@ -1,0 +1,27 @@
+-content_for :header_title do
+  ="- Contacto"
+%form
+  .data_form
+    %div
+      %p
+        Nombre*
+      %input{type: "text", size: "30"}
+    %div
+      %p
+        Mail*
+      %input{type: "text", size: "30"}
+    %div
+      %p
+        Asunto*
+      %input{type: "text", size: "30"}
+    %div
+      %p
+        Mensaje
+      %textarea{rows: "10", cols: "58"}
+    %div
+      %p.small
+        * Campos obligatorios
+  .contact_right
+    .mails
+    .send_form
+= partial "layouts/nav_buttons"
