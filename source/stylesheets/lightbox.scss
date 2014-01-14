@@ -1,6 +1,6 @@
 /* line 7, ../sass/lightbox.sass */
 body:after {
-  content: image-url("close.png") image-url("loading.gif") image-url("prev.png") image-url("next.png");
+  content: image-url("close.jpg") image-url("loading.gif") image-url("prev.png") image-url("next.png");
   display: none;
 }
 
@@ -188,7 +188,7 @@ body:after {
   float: right;
   width: 30px;
   height: 30px;
-  background: image-url("close.png") top right no-repeat;
+  background: image-url("close.jpg") top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
