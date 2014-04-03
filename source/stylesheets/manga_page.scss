@@ -1,0 +1,54 @@
+.manga_nav_buttons{
+  text-align: left;
+
+  .visor_mis_buttons{
+    margin-left: 88px;
+  }
+  .visor_nav_buttons{
+    margin-left: 111px;
+  }
+
+  .manga_nav_button{
+    width: 48px;
+    height: 38px;
+    display: inline-block;
+    margin-right: 5px;
+
+    &.text{
+      width: auto;
+      font-size: 12px;
+      background-color: #2474BD;
+      vertical-align: top;
+      padding: 0px 5px;
+
+      p{
+        display: inline-block;
+      }
+    }
+    &:last-child{
+      margin-right: 0px;
+    }
+    &.home_button{
+      background: image-url("buttons/home.jpg") no-repeat;
+    }
+    &.squares{
+      background: image-url("buttons/menu-capitulos.jpg") no-repeat;
+    }
+
+    &.plus_minus{
+      background: image-url("buttons/zoom.jpg") no-repeat; 
+    }
+    &.arrows{
+      width: 29px;
+    }
+    &.left_arrow{
+      background: image-url("buttons/atras.jpg") no-repeat; 
+    }
+    &.right_arrow{
+      background: image-url("buttons/adelante.jpg") no-repeat; 
+    }
+  }
+}
+.manga_page{
+  margin: 30px 0px;
+}
