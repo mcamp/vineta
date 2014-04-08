@@ -1,3 +1,6 @@
+-back_link = "/"
+-if content_for? :back_link
+  -back_link = yield_content :back_link
 .nav_buttons
-  .nav_button.home_button
-  .nav_button.back_button
+  =link_to "", "/", class: "nav_button home_button"
+  =link_to "", back_link, class: "nav_button back_button"

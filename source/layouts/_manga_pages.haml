@@ -1,10 +1,13 @@
 -content_for :header_title do
   ="- Operación Naranja - capitulo 1"
 
+-back_page = page - 1 < 1 ? "/mangas/naranja" : "pag#{page - 1}"
+-next_page = page + 1 > 6 ? "/mangas/naranja" : "pag#{page + 1}"
+
 .manga_nav_buttons.top
   .visor_mis_buttons.inline-block
-    .manga_nav_button.home_button
-    .manga_nav_button.squares
+    =link_to "", "/", class: "manga_nav_button home_button"
+    =link_to "", "/mangas/naranja", class: "manga_nav_button squares"
   .visor_nav_buttons.inline-block
     .manga_nav_button.text.manga_page_change
       %p
@@ -15,16 +18,16 @@
           %option{:value => i, :selected => selected}= i
 
     =link_to "", "#main_page", class: "manga_nav_button plus_minus"
-    .manga_nav_button.arrows.left_arrow
-    .manga_nav_button.arrows.right_arrow
+    =link_to "", back_page, class: "manga_nav_button arrows left_arrow"
+    =link_to "", next_page, class: "manga_nav_button arrows right_arrow"
 
 .manga_page{id: "main_page"}
   =image_tag "mangapages/pagina-ampliada-#{page}.jpg", class: "manga_page_img"
 
 .manga_nav_buttons.top
   .visor_mis_buttons.inline-block
-    .manga_nav_button.home_button
-    .manga_nav_button.squares
+    =link_to "", "/", class: "manga_nav_button home_button"
+    =link_to "", "/mangas/naranja", class: "manga_nav_button squares"
   .visor_nav_buttons.inline-block
     .manga_nav_button.text.manga_page_change
       %p
@@ -34,7 +37,7 @@
           -selected = i==page
           %option{:value => i, :selected => selected}= i
 
-    .manga_nav_button.plus_minus
+    =link_to "", "#main_page", class: "manga_nav_button plus_minus"
     .manga_nav_button.arrows.left_arrow
     .manga_nav_button.arrows.right_arrow
 

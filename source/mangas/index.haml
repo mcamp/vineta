@@ -1,6 +1,9 @@
 -content_for :header_title do
   ="- Historias"
-.third_left.naranja_manga
-.third_middle.pin_manga
-.third_right.no_manga
+=link_to "mangas/naranja" do
+  .third_left.naranja_manga
+=link_to "#" do
+  .third_middle.pin_manga
+=link_to "#" do
+  .third_right.no_manga
 = partial "layouts/nav_buttons"

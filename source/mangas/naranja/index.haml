@@ -1,6 +1,11 @@
 -content_for :header_title do
   ="- Historias - Operación Naranja"
-.third_left.naranja_1
-.third_middle.naranja_2
-.third_right.no_manga
+-content_for :back_link do
+  = "./"
+=link_to "naranja/cap1/pag1" do
+  .third_left.naranja_1
+=link_to "#" do
+  .third_middle.naranja_2
+=link_to "#" do
+  .third_right.no_manga
 = partial "layouts/nav_buttons"

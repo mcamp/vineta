@@ -1,8 +1,10 @@
-.left-element.historias
+=link_to "mangas" do 
+  .left-element.historias
 .right-container
-  .right-top-element.autores
+  =link_to "", "/authors", class: "right-top-element autores"
   .right-bottom-container
-    .left-bottom-element.arte
+    =link_to "", "#", class: "left-bottom-element arte"
     .right-inner-container
-      .right-bottom-top-element.quienes-somos
-      .right-bottom-bottom-element.contacto
+      =link_to "", "#", class: "right-bottom-top-element quienes-somos"
+      =link_to "contact" do
+        .right-bottom-bottom-element.contacto
