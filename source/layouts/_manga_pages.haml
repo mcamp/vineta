@@ -12,7 +12,7 @@
     .manga_nav_button.text.manga_page_change
       %p
         Página
-      %select{id: "select_page"}
+      %select.select_pages
         -(1..6).each do |i|
           -selected = i==page
           %option{:value => i, :selected => selected}= i
@@ -32,7 +32,7 @@
     .manga_nav_button.text.manga_page_change
       %p
         Página
-      %select
+      %select.select_pages
         -(1..6).each do |i|
           -selected = i==page
           %option{:value => i, :selected => selected}= i
@@ -64,6 +64,6 @@
   });
   
 
-  $("#select_page").change(function(){
+  $(".select_pages").change(function(){
     window.location.href = "pag"+$(this).val();
   });
