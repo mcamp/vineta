@@ -38,8 +38,8 @@
           %option{:value => i, :selected => selected}= i
 
     =link_to "", "#main_page", class: "manga_nav_button plus_minus"
-    .manga_nav_button.arrows.left_arrow
-    .manga_nav_button.arrows.right_arrow
+    =link_to "", back_page, class: "manga_nav_button arrows left_arrow"
+    =link_to "", next_page, class: "manga_nav_button arrows right_arrow"
 
 :javascript
   var normal_image = true;
