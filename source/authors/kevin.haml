@@ -18,6 +18,7 @@
     -(2..6).each do |i|
       %a{href:image_path("authors/kevin/imagen-#{i}.jpg"), "data-lightbox" => "author"}
         .little_image.separation-5.separation-only-sides{style: "background: url('#{image_path("authors/kevin/galeria-#{i}.jpg")}') no-repeat"}
-    .debian_image.separation-5.separation-only-left
+    =link_to "http://kevinz.deviantart.com" do
+      .debian_image.separation-5.separation-only-left
 
 = partial "layouts/nav_buttons"
