@@ -1,0 +1,45 @@
+.explain_icon{
+  background: image-url("whoarewe/imagen-1.jpg") no-repeat;
+  height: 176px;
+  width: 200px;
+}
+.mision_icon{
+  background: image-url("whoarewe/imagen-2.jpg") no-repeat;
+  height: 115px;
+  width: 200px;
+}
+.vision_icon{
+  background: image-url("whoarewe/imagen-3.jpg") no-repeat;
+  height: 115px;
+  width: 200px;
+}
+.explain_main{
+  .explain_text{
+    height: 176px;
+    width: 405px;
+  }
+}
+.mision_main{
+  .explain_text{
+    height: 115px;
+    width: 407px; 
+  }
+}
+.vision_main{
+  .explain_text{
+    height: 117px;
+    width: 407px; 
+    padding-top: 0px;
+  }
+}
+.explain_text{
+  p{
+    margin: 0px;
+    position: absolute;
+    width: 380px;
+  }
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+  font-size: 11px;
+  padding: 10px;
+}

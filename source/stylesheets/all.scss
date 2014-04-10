@@ -71,6 +71,16 @@ a:visited{
   margin-top: 0px;
 }
 
+.separation-left-bottom{
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+.separation-left-top{
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -170,6 +180,16 @@ a:visited{
   @extend .inline-block;
 }
 
+.top_part{
+  @extend .separation-5;
+  @extend .separation-only-bottom;
+}
+
+.bottom_part{
+  @extend .separation-5;
+  @extend .separation-only-top;
+}
+
 .mails{
   @extend .separation-5;
   @extend .separation-only-bottom;
@@ -192,5 +212,9 @@ a:visited{
   &:hover{
     background: image-url("contacto/boton-enviar-over.jpg") no-repeat;
   }
+}
+
+.background_main{
+  background-color: #2473BD;
 }
 
